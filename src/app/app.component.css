@@ -1,0 +1,28 @@
+head {
+    background: #252427;
+     color: rgb(0, 0, 0);
+}
+
+body {
+     background-color: #c0c0c0;
+     font-family: 'Varela Round', sans-serif;
+     line-height: 1.5;
+     margin: 0;
+     min-block-size: 100vh;
+     padding: 5vmin;
+
+    }
+
+    input {
+     background-image: none;
+     border: none;
+     font: inherit;
+     margin: 1;
+     padding: 1;
+     transition: all 0.3s;
+   }
+
+   .align {
+     display: grid;
+     place-items: center;
+   }
