@@ -1,57 +1,60 @@
-<header class="login__header">
-  <h2><svg class="icon">
-      <use xlink:href="#icon-lock" />
-    </svg>Iniciar</h2>
-</header>
+  <html>
+  
+    <section class="input-group mb-3" *ngIf="opAgregar1Adm">
+      <form action="">
+        <span class="input-group-text">ID: <input type="number" name="IdUs" size="5" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <br>
+        <span class="input-group-text"> Nombre: <input type="text" name="nombre" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Apellidos: <input type="text" name="apellido" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Correo electronico: <input type="text" name="nombre" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <br>
+        <span class="input-group-text" for="alumno"> <input type="radio" id="alumno" name="tipousuario" value="Alumno">  Alumno</span>
+        <span class="input-group-text" for="docente"> <input type="radio" id="docente" name="tipousuario" value="Docente">   Docente </span>
+        <span class="input-group-text" for="administrador"> <input type="radio" id="admnistrador" name="tipousuario" value="Administrador"> Admnistrador </span>
+        <br>
 
-<form action="#" class="login__form" method="POST">
-    
-  <div>
-    <label for="Id">ID  </label>
-    <input type="Id" id="Id" name="Id" placeholder="ID" class="Input" value="" size="20">
-    
-  </div>
-
-  <div>
-    <label for="Contraseña">Contraseña  </label>
-    <input type="password" id="Contrasena" name="Contrasena" placeholder="Contraseña" class="Input" value="" size="20">
-    
-  </div>
-
-  <div>
-    <input class="button" type="submit" value="Iniciar">
-  </div>
-
-</form>
-
-
-
-<!--<body>
-    <header class="login__header">
-        <h2><svg class="icon">
-            <use xlink:href="#icon-lock" />
-          </svg>Iniciar</h2>
-      </header>
-    
-      <form action="#" class="login__form" method="POST">
-    
-        <div>
-          <label for="Id">ID  </label>
-          <input type="Id" id="Id" name="Id" placeholder="ID" class="Input" value="" size="20">
-          
-        </div>
-    
-        <div>
-          <label for="Contraseña">Contraseña  </label>
-          <input type="password" id="Contrasena" name="Contrasena" placeholder="Contraseña" class="Input" value="" size="20">
-          
-        </div>
-    
-        <div>
-          <input class="button" type="submit" value="Iniciar">
-        </div>
+        <button type="submit" value="Agregar usuario" class="btn btn-dark"> Agregar usuario </button>
+        
+      </form>
+    </section>
+  
+    <section class="input-group mb-3" *ngIf="opModificar2Adm">
+      <form action="">
+        <span class="input-group-text"> ID: 
+          <input type="number" name="modificarUs" size="5" class="form-control" aria-label="Amount (to the nearest dollar)"> 
+        </span>
+        <br>
+        <button type="submit" value="Modificar Usuario" class="btn btn-dark"> Modificar usuario </button>
+      </form>
+    </section>
+  
+    <section class="input-group mb-3" *ngIf="opBuscar3Adm">
+      <form action="">
+        <span class="input-group-text"> ID: 
+          <input type="number" name="buscarUs" size="5" class="form-control" aria-label="Amount (to the nearest dollar)"> 
+        </span>
+        <br>
+        <button type="submit" value="Buscar usuario" class="btn btn-dark"> Buscar usuario </button>
     
       </form>
-  </body>-->
+    </section>
+  
+    <section class="input-group mb-3" *ngIf="opEliminar4Adm">
+      <form action="">
+        <span class="input-group-text"> ID: 
+          <input type="number" name="eliminarUs" size="5" class="form-control" aria-label="Amount (to the nearest dollar)"> 
+        </span>
+        <br>
+        <button type="submit" value="Eliminar usuario" class="btn btn-dark"> Eliminar usuario </button>
+      </form>
+    </section>
+  
+
+</html>
+
+
+
+
+
 
 

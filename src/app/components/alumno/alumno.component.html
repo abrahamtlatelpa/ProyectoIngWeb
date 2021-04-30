@@ -1,1 +1,60 @@
-<p>alumno works!</p>
+<html>
+    
+  <router-outlet></router-outlet>
+  <nav class="navbar navbar-dark bg-dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" >Alumno </a>
+    </div>
+  </nav>
+  
+  <section *ngIf='apagarBoton' class="input-group mb-3" >
+    <br >
+  <button  (click)="IniciarExamen()"  type="button" class="btn btn-dark">Inicar examen </button>
+  
+  <br >
+  </section>
+
+  
+  
+  <section  class="input-group mb-3" >
+
+    <form *ngIf='Iniciar' action="">
+        <br>
+
+        
+      
+
+        <br>
+
+        <span class="input-group-text"> Pregunta 1:</span>
+        <span class="input-group-text" for="res1"> <input type="radio" id="opcion1" name="pregunta1" value="resp1">  respuesta 1</span>
+        <span class="input-group-text" for="res2"> <input type="radio" id="opcion2" name="pregunta1" value="resp2">   respuesta 2 </span>
+        <span class="input-group-text" for="res3"> <input type="radio" id="opcion3" name="pregunta1" value="resp3">  respuesta 3</span>
+        <br>
+
+        <span class="input-group-text"> Pregunta 2:</span>
+        <span class="input-group-text" for="res1"> <input type="radio" id="opcion1" name="pregunta2" value="resp1">  respuesta 1</span>
+        <span class="input-group-text" for="res2"> <input type="radio" id="opcion2" name="pregunta2" value="resp2">   respuesta 2 </span>
+        <span class="input-group-text" for="res3"> <input type="radio" id="opcion3" name="pregunta2" value="resp3">  respuesta 3</span>
+        <br>
+
+        <span class="input-group-text"> Pregunta 3:</span>
+        <span class="input-group-text" for="res1"> <input type="radio" id="opcion1" name="pregunta3" value="resp1">  respuesta 1</span>
+        <span class="input-group-text" for="res2"> <input type="radio" id="opcion2" name="pregunta3" value="resp2">   respuesta 2 </span>
+        <span class="input-group-text" for="res3"> <input type="radio" id="opcion3" name="pregunta3" value="resp3">  respuesta 3</span>
+        <br>
+
+        
+        <button type="submit" value="Enviar " class="btn btn-dark">Enviar</button>
+   
+
+
+    </form>
+</section>
+
+
+</html>
+
+
+

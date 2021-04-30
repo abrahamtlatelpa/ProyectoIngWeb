@@ -1,0 +1,12 @@
+section {
+    text-align:inherit;
+    background-color: #ffffff;
+    border-top-left-radius: 1.25em;
+    border-top-right-radius: 1.25em;
+    border-bottom-left-radius:1.25em ;
+    border-bottom-right-radius:1.25em ;
+    color: rgb(0, 0, 0);
+    padding: 0.25em 
+    0.625em;
+}
+

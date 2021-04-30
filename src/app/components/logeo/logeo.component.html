@@ -1,0 +1,38 @@
+<html>
+    <nav>
+      <ul>
+        <li><a (click)="loginAct()"  routerLink="/administrador">administrador</a></li>
+        <li><a (click)="loginAct()" routerLink="/docente">docente </a></li>
+        <li><a (click)="loginAct()" routerLink="/alumno">alumno </a></li>
+      </ul>
+    </nav>
+
+    <html *ngIf = 'login' ><!-- INICIAR SESION -->
+  
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Iniciar </a>
+        </div>
+      </nav>
+    
+      <form action="#" class="login__form" method="POST">  
+    
+        <div>
+          <span class="input-group-text" for="Id">ID  <input type="Id" id="Id" name="Id" placeholder="   ID" class="form-control" aria-label="Amount (to the nearest dollar)" size="20"> </span> 
+        </div>
+      
+        <div>
+          <span class="input-group-text" for="Contraseña">Contraseña <input type="password" id="Contrasena" name="Contrasena" placeholder="    Contraseña" class="form-control" aria-label="Amount (to the nearest dollar)" size="20"> </span>
+        </div>
+    
+        <div>
+          <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+        </div>
+      
+      </form>
+  
+    </html>
+
+    <html>  
+      <router-outlet> </router-outlet>
+</html>

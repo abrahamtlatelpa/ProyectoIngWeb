@@ -1,16 +1,47 @@
-<header header class="login__header ">
-  <h2>Admnistrador</h2>
-</header>
+<html>
 
-<nav>
-  <ul>
-    <li><a routerLink="">Registrar examen</a>
-    
-    <li><a href="#">Baja  usuario</a></li>
-    <li><a href="#">Busqueda usuario</a></li>
-    <li><a href="#">Modificar usuario</a></li>
-    
-  </ul>
-</nav>
+  <nav class="navbar navbar-dark bg-dark">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" >Administrador </a>
+
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op1Adm()" routerLink="/administrador/usuario">
+          Agregar usuario
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op2Adm()" routerLink="/administrador/usuario">
+          Modificar usuario
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op3Adm()" routerLink="/administrador/usuario">
+          Buscar usuario
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op4Adm()" routerLink="/administrador/usuario">
+          Eliminar usuario
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand"  routerLink="">
+          Cerrar sesión
+        </a>
+      </li>
+
+    </div>
+
+  </nav>
+
+  <router-outlet></router-outlet>
+  <app-usuario [opAgregar1Adm] = "opAgregarAdm" ></app-usuario>
+  <app-usuario [opModificar2Adm] = "opModificarAdm" ></app-usuario>
+  <app-usuario [opBuscar3Adm] = "opBuscarAdm" ></app-usuario>
+<app-usuario [opEliminar4Adm] = "opEliminarAdm" ></app-usuario>
+
+</html>
+
 
 

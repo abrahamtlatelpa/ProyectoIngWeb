@@ -8,11 +8,27 @@ import { UsuarioComponent } from '../usuario/usuario.component';
 })
 export class AlumnoComponent extends UsuarioComponent implements OnInit {
 
+  Iniciar : boolean = false ;
+  apagarBoton : boolean = true ;
+  tiempo = 0;
+
   constructor(/*id : number, nombre : String, email : String, contrasena : String*/) {
     super(/*id, nombre, email, contrasena*/ );
   }
 
   ngOnInit(): void {
+  }
+
+  IniciarExamen(){
+    this.Iniciar=true;
+    this.apagarBoton=false;
+    setTimeout (this.TerminarExamen, 5000);
+  }
+
+  TerminarExamen(){
+    this.apagarBoton=false;
+    this.Iniciar=false;
+    alert ('Tiempo terminado');
   }
 
 }

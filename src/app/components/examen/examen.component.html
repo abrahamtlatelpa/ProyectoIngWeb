@@ -1,1 +1,67 @@
-<p>examen works!</p>
+
+<section class="input-group mb-3" *ngIf="opAgregar1">
+    <form   action="">
+
+
+        <span class="input-group-text">ID: <input type="number" name="IdEx" size="5" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Area: <input type="number" name="IdEx" size="10" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <br>
+        <span class="input-group-text"> Pregunta: <input type="text" name="Pregunta1" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta correcta: <input type="text" name="ResC1" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta incorrecta 1: <input type="text" name="1Res1" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta incorrecta 2: <input type="text" name="1Res2" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <br>
+        <span class="input-group-text"> Pregunta: <input type="text" name="Pregunta2" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta correcta: <input type="text" name="ResC2" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta incorrecta 1: <input type="text" name="2Res1" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta incorrecta 2: <input type="text" name="2Res2" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <br>
+        <span class="input-group-text"> Pregunta: <input type="text" name="Pregunta3" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta correcta: <input type="text" name="ResC3" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta incorrecta 1: <input type="text" name="3Res1" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <span class="input-group-text"> Respuesta incorrecta 2: <input type="text" name="3Res2" size="50" class="form-control" aria-label="Amount (to the nearest dollar)"> </span>
+        <br>
+        
+        <button type="submit" value="Agregar" class="btn btn-dark"> Agregar examen </button>
+
+    </form>
+
+</section>
+
+<section class="input-group mb-3" *ngIf="opModificar2">
+    <form action="">
+        <span class="input-group-text"> ID: 
+            <input type="number" name="IdExMod" size="5" class="form-control" aria-label="Amount (to the nearest dollar)"> 
+        </span><br>
+        
+        <button type="submit" value="Modificar" class="btn btn-dark"> Modificar examen </button>
+    </form>
+    
+</section>
+
+<section class="input-group mb-3" *ngIf="opBuscar3">
+    <form action="">
+        <span class="input-group-text"> ID: 
+            <input type="number" name="IdExModBusc" size="5" class="form-control" aria-label="Amount (to the nearest dollar)">
+        </span><br>
+        <button type="submit" value="Buscar" class="btn btn-dark"> Buscar examen </button>
+    </form>
+    
+    
+</section>
+
+<section class="input-group mb-3" *ngIf="opEliminar4">
+    <form action="">
+        <span class="input-group-text"> ID: 
+            <input type="number" name="IdExElim" size="5" class="form-control" aria-label="Amount (to the nearest dollar)"> 
+            
+        </span><br>
+        
+        <button type="submit" value="Eliminar" class="btn btn-dark"> Eliminar examen </button>
+    
+    </form>
+    
+    
+</section>
+
+

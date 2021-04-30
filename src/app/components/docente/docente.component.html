@@ -1,23 +1,47 @@
-<header header class="docente__header ">
-    <h2>Docente</h2>
-</header>
+
+<html>
+
+  <nav class="navbar navbar-dark bg-dark">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand" >Docente </a>
+  
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op1()" routerLink="/docente/examen">
+          Agregar examen
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op2()" routerLink="/docente/examen">
+          Modificar examen
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op3()" routerLink="/docente/examen">
+          Buscar examen
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand" (click)="op4()" routerLink="/docente/examen">
+          Eliminar examen
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="navbar-brand"  routerLink="">
+          Cerrar sesión
+        </a>
+      </li>
+      
+    </div>
+    
+  </nav>
+
 
 <router-outlet></router-outlet>
+<app-examen [opAgregar1] = "opAgregar" ></app-examen>
+<app-examen [opModificar2] = "opModificar" ></app-examen>
+<app-examen [opBuscar3] = "opBuscar" ></app-examen>
+<app-examen [opEliminar4] = "opEliminar" ></app-examen>
 
-<nav >
-  
-  <ul>
-      <li><a routerLink="/docente/examen">Registrar examen</a></li>
-      <!--<li><a href="#">Registrar examen</a></li>
-      <a routerLink="/docente/examen">Registrar examen</a>-->
-      <li><a href="#">Modificar examen</a></li>
-      <li><a href="#">Buscar examen</a></li>
-      <li><a href="#">Eliminar examen</a></li>
-  
-    </ul>
-    <router-outlet></router-outlet>
-</nav>
-
-
-
+</html>
 

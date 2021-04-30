@@ -1,4 +1,4 @@
-head {
+/*head {
     background: #252427;
      color: rgb(0, 0, 0);
 }
@@ -13,16 +13,9 @@ body {
 
     }
 
-    input {
-     background-image: none;
-     border: none;
-     font: inherit;
-     margin: 1;
-     padding: 1;
-     transition: all 0.3s;
-   }
+    
 
    .align {
      display: grid;
      place-items: center;
-   }
+   }*/

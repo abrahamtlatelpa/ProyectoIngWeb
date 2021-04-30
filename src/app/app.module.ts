@@ -10,6 +10,7 @@ import { DocenteComponent } from './components/docente/docente.component';
 import { AdministradorComponent } from './components/administrador/administrador.component';
 import { ExamenComponent } from './components/examen/examen.component';
 import { RouteModule } from './route.module';
+import { LogeoComponent } from './components/logeo/logeo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouteModule } from './route.module';
     AlumnoComponent,
     DocenteComponent,
     AdministradorComponent,
-    ExamenComponent
+    ExamenComponent,
+    LogeoComponent
   ],
   imports: [
     BrowserModule,
